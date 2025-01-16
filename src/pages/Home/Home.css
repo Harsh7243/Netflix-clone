@@ -1,0 +1,67 @@
+.hero{
+    @apply relative;
+}
+.banner-img{
+    @apply w-[100%] [mask-image:radial-gradient(circle,black_4%,transparent_100%)] ;
+}
+.hero_caption{
+    @apply absolute w-[100%] pl-[6%] bottom-[0] ;
+}
+.caption-img{
+    @apply w-[40%] max-w-[420px] mb-[30px];
+}
+.hero_caption p{
+    @apply max-w-[700px] text-[17px] mb-[20px];
+}
+.hero-btns{
+    @apply flex gap-[10px] mb-[40px];
+}
+.hero-btns .btn{
+    @apply border-0 outline-0 px-[20px] pt-[8px] pb-[8px] inline-flex items-center gap-[10px] text-[15px] font-semibold bg-white rounded text-black hover:bg-[#ffffffbf];
+}
+.hero-btns .dark-btn{
+    @apply text-white bg-[#6d6d6eb3] hover:bg-[#6d6d6e66]; 
+}
+.morecards{
+    @apply pl-[6%];
+}
+@media(max-width:1024px){
+    .hero_caption .titlecards{
+        @apply hidden;
+    }
+    .hero-btns{
+        @apply mb-[30px];
+    }
+    .caption-img{
+        @apply mb-[10px] w-[40%];
+    }
+}
+
+@media(max-width: 800px){
+    .hero_caption{
+        @apply pl-[4%];
+    }
+    .caption-img{
+        @apply mb-[10px] w-[40%];
+    }
+    .hero_caption p{
+        @apply text-xs mb-[10px];
+    }
+    .btn img{
+        @apply w-5;
+    }
+    .morecards{
+        @apply pl-[4%];
+    }
+}
+@media(max-width: 500px){
+    .caption-img{
+        @apply hidden;
+    }
+    .hero-btns .btn img{
+        @apply w-[15px];
+    }
+    .hero-btns .btn{
+        @apply pt-1 pb-1 px-[10px] gap-[5px] text-[10px];
+    }   
+}

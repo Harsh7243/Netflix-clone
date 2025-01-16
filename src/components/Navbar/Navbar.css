@@ -1,0 +1,57 @@
+.navbar {
+    @apply w-full pt-[20px] pb-[20px] px-[6%] flex justify-between fixed text-[14px] text-[#e5e5e5] z-[1];
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+}
+.Nav-left {
+    @apply flex items-center gap-[50px];
+}
+.Nav-left img{
+    @apply w-[90px];
+}
+.Nav-left ul{
+    @apply flex list-none gap-[20px];
+}
+.Nav-left li{
+    @apply cursor-pointer;
+}
+.Nav-right {
+    @apply flex gap-[20px] items-center;
+}
+.Nav-right .icons{
+    @apply w-[20px] cursor-pointer;
+}
+.Nav-right .profile{
+    @apply rounded-[4px] w-[35px];
+}
+.Nav-pro{
+    @apply flex items-center gap-[10px] cursor-pointer relative;
+}
+.navbar .dropdown{
+    @apply absolute top-[100%] right-0 w-[max-content] bg-[#191919] pt-[18px] pb-[18px] px-[22px] rounded-[2px] underline z-[1] hidden;
+}
+.navbar .dropdown p{
+    @apply text-[13px] cursor-pointer; 
+}
+.Nav-pro:hover .dropdown{
+    @apply block;
+}
+@media(max-width: 800px){
+    .navbar{
+        @apply pt-5 pb-5 px-[4%];
+    }
+    .Nav-left ul{
+        @apply hidden;
+    }
+    .navbar img{
+        @apply h-[25px]; 
+    }
+
+}
+@media(max-width: 500px){
+    .navbar img{
+        @apply h-5; 
+    }
+    .Nav-right{
+        @apply gap-[10px];
+    }
+}

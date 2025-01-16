@@ -1,0 +1,12 @@
+.player{
+    @apply flex h-screen flex-col justify-center items-center; 
+}
+.player img{
+    @apply absolute top-5 left-5 w-[50px] cursor-pointer;
+}
+.player iframe{
+    @apply rounded-[10px];
+}
+.player-info{
+    @apply flex items-center justify-between w-[90%];
+}
